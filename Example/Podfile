@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'MyLibrary_Example', :exclusive => true do
+  pod "MyLibrary", :path => "../"
+end
+
+target 'MyLibrary_Tests', :exclusive => true do
+  pod "MyLibrary", :path => "../"
+
+  pod 'FBSnapshotTestCase'
+end
